@@ -1,0 +1,135 @@
+
+*{
+padding:0;
+margin:0;
+box-sizing: border-box;
+}
+/* variables */
+:root{
+    --primary-text-color:#183b56;
+    --secondry-text-color:#0f0655dd;
+    --accent-text-color:#eef2f4;
+    --primary-color-dark:#170664;
+
+}
+
+
+.body{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color:var(--primary-text-color);
+    
+    
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    color:var(--secondry-text-color) ;
+    line-height:1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.container{
+  max-width:1180px;
+  overflow: hidden;
+  margin-inline:auto;
+}
+nav{
+    background-color: rgb(187, 204, 228);
+    /* border:4px solid rgb(133, 132, 132); */
+    border-radius: 30px;
+    position:fixed;
+    top:0;
+    z-index:100;
+    left:0;
+    right:0;
+    
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 10px;
+    
+}
+.logo.img{
+width:60px;
+border-radius:50%;
+}
+.nav-links ul{
+    gap:36px;
+    font-size: 20px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color:var(--secondry-text-color)
+}
+.search-bar{
+    height:32px;
+    gap:8px;
+}
+.news-input{
+    width:200px;
+    height:30px;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border:2px solid black;
+}
+.search-button{
+    background-color: rgb(32, 162, 223);
+    width:85px;
+    color:white;
+    height:30px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color:  rgb(9, 78, 110);
+}
+main {
+    margin-top: 90px; 
+    padding:20px;
+  }
+  .cards-container{
+    justify-content:space-between;
+    flex-wrap:wrap;
+    row-gap:20px;
+    align-items:start;
+  }
+  .card{
+    width:360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px rgb(23, 30, 36);
+    border-radius: 4px;
+    cursor:pointer;
+    background-color: rgb(255, 255, 255);
+    overflow:hidden;
+    transition:all 0.3s ease;
+  }
+  .card:hover{
+    background-color: aliceblue;
+    transform:translateY(-2px);
+  }
+  .card-header img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+  }
+  .card-content{
+    padding:12px;
+  }
+  .news-source{
+    margin-block:16px;
+  }
+  .nav-item.active{
+    color:rgb(235, 10, 10);
+  }
+  
